@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de comidas</title>
+    <link rel="stylesheet" href="cardapio.css">
+</head>
+<body>
+    <header>
+        <h1>Cardápio</h1>
+        <nav>
+            <button onclick="cadastro.classList.remove('oculta')">Add</button>
+            <button>Limpar</button>
+        </nav>
+    </header>
+    <footer>
+        <h2>By Lucas G. Giachetto</h2>
+    </footer>
+    <div id="cadastro" class="modal oculta">
+        <div class="janela">
+            <h2>Adicionar comida <button onclick="cadastro.classList.add('oculta')">X</button></h2>
+            <form>
+                <input type="text" name="nome" placeholder="Nome" required>
+                <input type="number" name="preco" placeholder="Preço" required>
+                <input type="text" name="foto" placeholder="Cole o link da imagem" required>
+                <button type="submit">Adicionar</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="cardapio.js"></script>
+</html>
